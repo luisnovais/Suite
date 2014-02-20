@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Core;
+using MyProgrammerSuite.Utilities;
 
 namespace MyProgrammerSuite
 {
@@ -20,6 +22,8 @@ namespace MyProgrammerSuite
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private Entities _entities = new Entities();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +34,15 @@ namespace MyProgrammerSuite
             String value = this.txtField.Text.ToString();
             String translation = this.txtTranslateValue.Text.ToString();
 
-            MessageBox.Show(String.Format("Valor: {0} \nTradução: {1}", value, translation));
+            
+            _entities.AddNewEntity(new Entity(value,translation));
+
+            //MessageBox.Show(String.Format("Valor: {0} \nTradução: {1}", value, translation));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            EntitiesSave entitiesSave = new EntitiesSave(_entities.EntitiesList);
         }
     }
 }

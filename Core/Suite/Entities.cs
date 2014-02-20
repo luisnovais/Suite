@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyProgrammerSuite.Components
+namespace Core
 {
     public class Entities
     {
         private List<Entity> _entitiesList = new List<Entity>();
 
+        public Entities()
+        {
+        }
 
         public List<Entity> EntitiesList
         {
@@ -17,8 +20,12 @@ namespace MyProgrammerSuite.Components
             set { _entitiesList = value; }
         }
 
-        public Entities()
+        public void AddNewEntity(Entity entity)
         {
+            if (entity != null)
+            {
+                this.EntitiesList.Add(entity);
+            }
         }
     }
 }
