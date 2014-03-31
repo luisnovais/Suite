@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Core
+namespace Core.Suite
 {
     public class Entities
     {
         private List<Entity> _entitiesList = new List<Entity>();
-
-        public Entities()
-        {
-        }
 
         public List<Entity> EntitiesList
         {
