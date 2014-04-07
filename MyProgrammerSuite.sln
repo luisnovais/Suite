@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", 
 		Core\bin\Debug\Core.dll = Core\bin\Debug\Core.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{C575E3D6-3CE1-4D82-B532-632C1962C502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{7A2D1581-ED6D-4B84-9BAB-E1EB80920CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A2D1581-ED6D-4B84-9BAB-E1EB80920CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A2D1581-ED6D-4B84-9BAB-E1EB80920CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C575E3D6-3CE1-4D82-B532-632C1962C502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C575E3D6-3CE1-4D82-B532-632C1962C502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C575E3D6-3CE1-4D82-B532-632C1962C502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C575E3D6-3CE1-4D82-B532-632C1962C502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
